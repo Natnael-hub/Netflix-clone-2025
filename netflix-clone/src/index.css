@@ -3,7 +3,7 @@
 :root{
     --font-base: 'Lexend', sans-Serif;;
     --font-second-base: 'Inter', sans-Serif;
-    --bg-color: #111;
+    --bg-color: #000000;
     --primary-color: #ffffff;
     --secondary-color: #e50914;
 }
@@ -14,5 +14,5 @@
 }
 body
 {
-    background-color: #111;
+    background-color: #000000;
 }
