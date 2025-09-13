@@ -9,7 +9,6 @@ useEffect(()=>{
     (async()=>{
         try{
             const request = await axiosInstance.get(requests.fetchNetflixOriginals)
-            console.log(request);
             setMovie(request.data.results[ Math.floor(Math.random()*request.data.results.length)]);
         }catch (error){
             console.log("error", error);

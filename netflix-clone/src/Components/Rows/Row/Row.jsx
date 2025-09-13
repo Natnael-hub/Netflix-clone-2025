@@ -11,9 +11,7 @@ const base_url = 'https://image.tmdb.org/t/p/original';
 useEffect(()=>{
     (async()=>{
         try{
-            console.log(fetchUrl);
             const request = await axiosInstance.get(fetchUrl);
-            console.log(request);
             setMovies(request.data.results)
         }catch(error){
             console.log("error", error);
@@ -26,9 +24,7 @@ const handleClick = (movie)=>{
     }else {
         movieTrailer(movie?.title||movie?.name||movie?.original_name)
         .then((url)=>{
-            console.log(url);
             const urlParams= new URLSearchParams(new URL(url).search)
-            console.log(urlParams);
             console.log(urlParams.get('v'));
             setTrailerUrl(urlParams.get('v'));
         })
