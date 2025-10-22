@@ -42,12 +42,14 @@ const Footer = () => {
         </ul>
       </div>
     </div>
+    <div className={styles.service_copy}>
   <div className= {styles.service_code}>
 <p>Service Code</p>
     </div>
     <div className={styles.copy_write}>
       &copy; 1997-2025 Netflix, Inc.
     </div>
+   </div>
    </div>
     
   )

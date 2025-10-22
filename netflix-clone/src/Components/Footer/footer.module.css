@@ -54,12 +54,14 @@ display: inline-block;
 cursor: pointer;
 transition: all .3s ease;
 }
+
 .service_code p:hover{
     color: white;
     border-color: white;
 
 .copy_write{
-    padding-top: 280px;
+margin-top: -200px;
     font-size: 12px;
     color: #737373;
+    margin-right: 20px;
 }}
